@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements. See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership. The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License. You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied. See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet author="fineract" id="1" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Listado de clientes"/>
+            <where>id='1' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="2" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Listado de préstamos de clientes"/>
+            <where>id='2' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="3" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos en espera de desembolso"/>
+            <where>id='5' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="4" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de préstamos en espera de desembolso"/>
+            <where>id='6' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="5" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos en espera de desembolso Resumen por mes"/>
+            <where>id='7' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="6" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos pendientes de aprobación"/>
+            <where>id='8' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="7" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos - Resumen"/>
+            <where>id='11' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="8" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos - Detalles"/>
+            <where>id='12' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="9" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Obligación cumplida Detalles de préstamos"/>
+            <where>id='13' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="10" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de préstamos con obligación cumplida"/>
+            <where>id='14' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="11" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cartera en Riesgo"/>
+            <where>id='15' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="12" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cartera en Riesgo por Sucursal"/>
+            <where>id='16' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="13" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de fondos desembolsados entre fechas"/>
+            <where>id='20' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="14" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Fondos desembolsados entre fechas Resumen por oficina"/>
+            <where>id='21' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="15" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Hoja de balance"/>
+            <where>id='48' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="16" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estado de resultados"/>
+            <where>id='49' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="17" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Saldo de prueba"/>
+            <where>id='50' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="18" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos cancelados"/>
+            <where>id='51' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="19" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Detalle de antigüedad"/>
+            <where>id='52' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="20" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de antigüedad (atrasos en semanas)"/>
+            <where>id='53' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="21" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Reprogramados"/>
+            <where>id='54' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="22" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos Pasados Vencimiento Final"/>
+            <where>id='55' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="23" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de vencimiento final de préstamos activos aprobados"/>
+            <where>id='56' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="24" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos en última cuota"/>
+            <where>id='57' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="25" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos en última cuota Resumen"/>
+            <where>id='58' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="26" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos activos por período de desembolso"/>
+            <where>id='59' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="27" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de antigüedad (atrasos en meses)"/>
+            <where>id='61' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="28" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Programa de cuenta de préstamo"/>
+            <where>id='91' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="29" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Flujo de efectivo esperado de la sucursal"/>
+            <where>id='92' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="30" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos esperados por fecha - Básico"/>
+            <where>id='93' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="31" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos previstos por fecha: con formato"/>
+            <where>id='94' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="32" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Recuentos de resumen de grupo"/>
+            <where>id='96' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="33" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Montos de resumen de grupo"/>
+            <where>id='97' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="34" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Saldos corrientes de Txn"/>
+            <where>id='106' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="35" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estadísticas del agente de campo"/>
+            <where>id='107' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="36" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Programas de agentes de campo"/>
+            <where>id='108' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="37" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Detalles del programa"/>
+            <where>id='109' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="38" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Lista de personal (Con subordinados)"/>
+            <where>id='110' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="39" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estadísticas del coordinador"/>
+            <where>id='111' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="40" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estadísticas del Gerente de Sucursal"/>
+            <where>id='112' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="41" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estadísticas del director del programa"/>
+            <where>id='113' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="42" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Estadísticas del programa"/>
+            <where>id='114' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="43" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen del cliente"/>
+            <where>id='115' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="44" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Ciclo de préstamo por producto"/>
+            <where>id='116' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="45" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de ahorro grupal"/>
+            <where>id='117' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="46" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Transacciones de Ahorro"/>
+            <where>id='118' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="47" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de ahorros del cliente"/>
+            <where>id='119' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="48" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos - Detalles(Pentaho)"/>
+            <where>id='120' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="49" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos - Resumen(Pentaho)"/>
+            <where>id='121' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="50" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos activos por período de desembolso (Pentaho)"/>
+            <where>id='122' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="51" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos en última cuota Resumen (Pentaho)"/>
+            <where>id='123' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="52" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos en última cuota (Pentaho)"/>
+            <where>id='124' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="53" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de vencimiento final de préstamos activos aprobados (Pentaho)"/>
+            <where>id='125' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="54" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Activos Pasados Vencimiento Final (Pentaho)"/>
+            <where>id='126' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="55" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Detalle de antigüedad (Pentaho)"/>
+            <where>id='127' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="56" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de antigüedad (atrasos en meses) (Pentaho)"/>
+            <where>id='128' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="57" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de antigüedad (atrasos en semanas)(Pentaho)"/>
+            <where>id='129' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="58" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Listado de clientes (Pentaho)"/>
+            <where>id='130' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="59" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Listado de préstamos de clientes (Pentaho)"/>
+            <where>id='131' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="60" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos esperados por fecha - Básico (Pentaho)"/>
+            <where>id='132' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="61" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de fondos desembolsados entre fechas por oficina (Pentaho)"/>
+            <where>id='133' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="62" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de fondos desembolsados entre fechas (Pentaho)"/>
+            <where>id='134' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="63" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos en espera de desembolso Resumen por mes (Pentaho)"/>
+            <where>id='135' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="64" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de préstamos en espera de desembolso (Pentaho)"/>
+            <where>id='136' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="65" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos en espera de desembolso (Pentaho)"/>
+            <where>id='137' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="66" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Pendientes de Aprobación (Pentaho)"/>
+            <where>id='138' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="67" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Obligación cumplida Detalles de préstamos (Pentaho)"/>
+            <where>id='139' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="68" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de préstamos con obligaciones cumplidas (Pentaho)"/>
+            <where>id='140' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="69" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cartera en Riesgo por Sucursal (Pentaho)"/>
+            <where>id='141' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="70" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cartera en Riesgo(Pentaho)"/>
+            <where>id='142' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="71" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos Reprogramados (Pentaho)"/>
+            <where>id='143' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="72" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Saldos corrientes de Txn (Pentaho)"/>
+            <where>id='144' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="73" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamos castigados (Pentaho)"/>
+            <where>id='145' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="74" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Transacciones de ahorro del cliente"/>
+            <where>id='146' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="75" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Calendario de cuenta de préstamo de cliente"/>
+            <where>id='147' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="76" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Nombres de grupos por personal"/>
+            <where>id='148' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="77" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de clientes por día"/>
+            <where>id='149' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="78" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de clientes por semana"/>
+            <where>id='150' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="79" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de clientes por mes"/>
+            <where>id='151' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="80" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de préstamos por día"/>
+            <where>id='152' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="81" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de préstamos por semana"/>
+            <where>id='153' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="82" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Tendencias de préstamos por mes"/>
+            <where>id='154' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="83" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Demanda Vs Recaudación"/>
+            <where>id='155' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="84" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Desembolso Vs En espera de desembolso"/>
+            <where>id='156' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="85" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Recibo de Transacción de Ahorros"/>
+            <where>id='157' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="86" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Recibo de transacción de préstamo"/>
+            <where>id='158' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="87" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Historial de asignaciones de personal"/>
+            <where>id='159' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="88" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Informe de contabilidad general"/>
+            <where>id='160' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="89" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Resumen de préstamo activo por sucursal"/>
+            <where>id='161' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="90" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Saldo pendiente"/>
+            <where>id='162' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="91" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Informe de colección"/>
+            <where>id='163' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="92" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Informe de desembolso"/>
+            <where>id='164' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="93" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Reporte de Inactividad de Cuentas de Ahorro"/>
+            <where>id='165' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="94" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Clientes activos"/>
+            <where>id='166' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="95" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Futuros clientes"/>
+            <where>id='167' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="96" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Clientes de préstamos activos"/>
+            <where>id='168' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="97" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo en mora"/>
+            <where>id='169' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="98" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos de préstamos vencidos"/>
+            <where>id='170' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="99" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Perspectivas latentes"/>
+            <where>id='171' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="100" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Líderes de grupo activos"/>
+            <where>id='172' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="101" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos de préstamos vencidos (préstamos vencidos)"/>
+            <where>id='173' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="102" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos de préstamos recibidos (Préstamos Activos)"/>
+            <where>id='174' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="103" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pagos de préstamos recibidos (Préstamos vencidos)"/>
+            <where>id='175' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="104" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Feliz cumpleaños"/>
+            <where>id='176' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="105" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo totalmente pagado"/>
+            <where>id='177' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="106" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo pendiente después de la fecha de la última cuota"/>
+            <where>id='178' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="107" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Pago de préstamo"/>
+            <where>id='179' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="108" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo aprobado"/>
+            <where>id='180' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="109" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo rechazado"/>
+            <where>id='181' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="110" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cliente rechazado"/>
+            <where>id='182' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="111" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Cliente activado"/>
+            <where>id='183' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="112" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Ahorros rechazados"/>
+            <where>id='184' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="113" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Ahorro Activado"/>
+            <where>id='185' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="114" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Depósito de ahorro"/>
+            <where>id='186' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="115" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Retiro de Ahorros"/>
+            <where>id='187' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="116" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Lista de categorías de informes"/>
+            <where>id='188' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="117" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Lista de informes completos"/>
+            <where>id='189' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="118" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo aprobado - Correo electrónico"/>
+            <where>id='190' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="119" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Préstamo rechazado - Correo electrónico"/>
+            <where>id='191' </where>
+        </update>
+    </changeSet>
+    <changeSet author="fineract" id="120" context="postgresql">
+        <update tableName="stretchy_report">
+            <column name="report_name" value="Reembolso del préstamo - Correo electrónico"/>
+            <where>id='192' </where>
+        </update>
+    </changeSet>
+
+
+</databaseChangeLog>
